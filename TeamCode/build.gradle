@@ -23,10 +23,28 @@ android {
     }
 }
 
+repositories {
+    maven {
+        url = 'https://maven.brott.dev/'
+    }
+    maven {
+        url = 'https://repo.dairy.foundation/releases'
+    }
+    maven {
+        url = 'https://repo.dairy.foundation/snapshots'
+    }
+}
+
 dependencies {
     implementation project(':FtcRobotController')
     annotationProcessor files('lib/OpModeAnnotationProcessor.jar')
 
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.7'
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.4.21'
+    // Dairy Foundation
+    implementation "dev.frozenmilk.dairy:Util:1.1.0" // util
+    implementation "dev.frozenmilk.dairy:Core:1.0.1" // core
+    implementation "dev.frozenmilk.dairy:Pasteurized:1.0.0" // pasteurized
+    implementation "dev.frozenmilk.mercurial:Mercurial:1.0.3" // mercurial
+
 }
