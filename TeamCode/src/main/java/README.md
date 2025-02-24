@@ -7,7 +7,6 @@ EZ 24173's TeamCode for INTO THE DEEP 24/25
 | m2            | leftRear      | *used for horizontal extension axle |
 | m3            | leftFront     | n/a                                 |
 | Extension Hub |               |                                     |
-|---------------|---------------|-------------------------------------|
 | m0            | rightExt      | used                                |
 | m1            | leftExt       | used                                |
 | m2            | horizontalExt | used                                |
